@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Libraries\Includes\MinHook\MinHook.hpp" />
+    <ClInclude Include="AllScripts.hpp" />
+    <ClInclude Include="AssignPhysicalIndex.hpp" />
+    <ClInclude Include="BytePatch.hpp" />
+    <ClInclude Include="BytePatchMgr.hpp" />
+    <ClInclude Include="CanApplyData.hpp" />
+    <ClInclude Include="ColorOpt.hpp" />
+    <ClInclude Include="Colors.hpp" />
+    <ClInclude Include="Config.hpp" />
+    <ClInclude Include="Fibers\fiber_pool.hpp" />
+    <ClInclude Include="Fibers\script.hpp" />
+    <ClInclude Include="Fibers\script_mgr.hpp" />
+    <ClInclude Include="fontAwesome.hpp" />
+    <ClInclude Include="fontAwesome6.hpp" />
+    <ClInclude Include="FreeCam.hpp" />
+    <ClInclude Include="GetModelInfo.hpp" />
+    <ClInclude Include="GetNetworkEventData.hpp" />
+    <ClInclude Include="ImGui\imconfig.h" />
+    <ClInclude Include="ImGui\imgui.h" />
+    <ClInclude Include="ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="ImGui\imgui_internal.h" />
+    <ClInclude Include="ImGui\imstb_rectpack.h" />
+    <ClInclude Include="ImGui\imstb_textedit.h" />
+    <ClInclude Include="ImGui\imstb_truetype.h" />
+    <ClInclude Include="Imgui_Spinner.hpp" />
+    <ClInclude Include="ImVec2Operations.hpp" />
+    <ClInclude Include="InitNativeTable.hpp" />
+    <ClInclude Include="InvalidCrashes.hpp" />
+    <ClInclude Include="joaat2.hpp" />
+    <ClInclude Include="Labels.hpp" />
+    <ClInclude Include="NetArray.hpp" />
+    <ClInclude Include="NetGameEvent.hpp" />
+    <ClInclude Include="NetObjectMgr.hpp" />
+    <ClInclude Include="NetworkPlayerMgr.hpp" />
+    <ClInclude Include="NoClip.hpp" />
+    <ClInclude Include="Opt.hpp" />
+    <ClInclude Include="OutfitEditor.hpp" />
+    <ClInclude Include="ReceivedCloneCreate.hpp" />
+    <ClInclude Include="ReceivedCloneSync.hpp" />
+    <ClInclude Include="ReceiveEvent.hpp" />
+    <ClInclude Include="ReceiveNetMessage.hpp" />
+    <ClInclude Include="Recovery.hpp" />
+    <ClInclude Include="RapidJson.hpp" />
+    <ClInclude Include="KicksAndCrashes.hpp" />
+    <ClInclude Include="ScriptedGameEvent.hpp" />
+    <ClInclude Include="ScriptGlobal.hpp" />
+    <ClInclude Include="ScriptPatches.hpp" />
+    <ClInclude Include="ScriptVirtualMachine.hpp" />
+    <ClInclude Include="script_function.hpp" />
+    <ClInclude Include="SerializeDataNode.hpp" />
+    <ClInclude Include="Services\Api\api_service.hpp" />
+    <ClInclude Include="Services\Friend\friends_service.hpp" />
+    <ClInclude Include="Services\Player\player.hpp" />
+    <ClInclude Include="Services\Player\player_service.hpp" />
+    <ClInclude Include="Services\Player\rate_limiter.hpp" />
+    <ClInclude Include="Services\ScriptPatcher\script_data.hpp" />
+    <ClInclude Include="Services\ScriptPatcher\script_patch.hpp" />
+    <ClInclude Include="Services\ScriptPatcher\script_patcher_service.hpp" />
+    <ClInclude Include="SpinnerService.hpp" />
+    <ClInclude Include="TaskJumpAndFallConstructor.hpp" />
+    <ClInclude Include="Translations.hpp" />
+    <ClInclude Include="Vehicle.hpp" />
+    <ClInclude Include="VehModTable.hpp" />
+    <ClInclude Include="WriteGameStateDataNode.hpp" />
+    <ClInclude Include="WritePlayerCameraDataNode.hpp" />
+    <ClInclude Include="WriteVehicleMigrationDataNode.hpp" />
+    <ClInclude Include="x64Disassmbler.hpp" />
+    <ClInclude Include="Common.hpp" />
+    <ClInclude Include="CReplyInterface.hpp" />
+    <ClInclude Include="Crossmap.hpp" />
+    <ClInclude Include="DetourHelper.hpp" />
+    <ClInclude Include="Entity.hpp" />
+    <ClInclude Include="Enums.hpp" />
+    <ClInclude Include="exceptionHandler.hpp" />
+    <ClInclude Include="Features.hpp" />
+    <ClInclude Include="GtaUtill.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\atRTTI.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\CBaseModelInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\CNavigation.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\CObject.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\datBase.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\fwArchetype.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\fwArchetypeDef.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\fwExtensibleBase.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\fwExtension.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\fwExtensionContainer.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\fwRefAwareBase.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\fwRefAwareBaseImpl.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\HashTable.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\pgBase.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\phArchetype.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\phBound.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\phBoundCapsule.hpp" />
+    <ClInclude Include="GTAV-Classes-master\base\phBoundComposite.hpp" />
+    <ClInclude Include="GTAV-Classes-master\camera\CCameraAngles.hpp" />
+    <ClInclude Include="GTAV-Classes-master\camera\CCameraManagerAngles.hpp" />
+    <ClInclude Include="GTAV-Classes-master\camera\CGameCameraAngles.hpp" />
+    <ClInclude Include="GTAV-Classes-master\draw_handlers\CEntityDrawHandler.hpp" />
+    <ClInclude Include="GTAV-Classes-master\draw_handlers\CObjectDrawHandler.hpp" />
+    <ClInclude Include="GTAV-Classes-master\draw_handlers\CPedDrawHandler.hpp" />
+    <ClInclude Include="GTAV-Classes-master\draw_handlers\CVehicleDrawHandler.hpp" />
+    <ClInclude Include="GTAV-Classes-master\draw_handlers\fwDrawData.hpp" />
+    <ClInclude Include="GTAV-Classes-master\entities\CAttackers.hpp" />
+    <ClInclude Include="GTAV-Classes-master\entities\CDynamicEntity.hpp" />
+    <ClInclude Include="GTAV-Classes-master\entities\CEntity.hpp" />
+    <ClInclude Include="GTAV-Classes-master\entities\CPhysical.hpp" />
+    <ClInclude Include="GTAV-Classes-master\entities\fwEntity.hpp" />
+    <ClInclude Include="GTAV-Classes-master\enums\eExplosionTag.hpp" />
+    <ClInclude Include="GTAV-Classes-master\enums\eHandlingType.hpp" />
+    <ClInclude Include="GTAV-Classes-master\misc\CTunables.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\CProjectBaseSyncDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\CProjectSyncTree.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\netSyncDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\netSyncNodeBase.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\netSyncParentNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\netSyncTree.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\NodeCommonDataOperations.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\automobile\CAutomobileCreationNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\CPedComponents.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\door\CDoorCreationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\door\CDoorMovementDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\door\CDoorScriptGameStateDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\door\CDoorScriptInfoDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\dynamic_entity\CDynamicEntityGameStateDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\entity\CEntityOrientationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\entity\CEntityScriptGameStateDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\entity\CEntityScriptInfoDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\object\CObjectCreationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedAIDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedAppearanceDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedAttachDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedComponentReservationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedCreationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedGameStateDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedHealthDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedInventoryDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedMovementDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedOrientationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedScriptCreationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedTaskSpecificDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\physical\CPhysicalAngVelocityDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\physical\CPhysicalAttachDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\physical\CPhysicalHealthDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\physical\CPhysicalMigrationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\physical\CPhysicalScriptMigrationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\physical\CPhysicalVelocityDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\pickup\CPickupCreationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\pickup_placement\CPickupPlacementCreationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\player\CPlayerAppearanceDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\player\CPlayerCameraDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\player\CPlayerCreationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\player\CPlayerGamerDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\player\CPlayerGameStateDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\player\CPlayerSectorPosNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\proximity_migrateable\CGlobalFlagsDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\proximity_migrateable\CMigrationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\proximity_migrateable\CSectorDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\proximity_migrateable\CSectorPositionDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\task\CClonedGeneralSweepInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\task\ClonedTakeOffPedVariationInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\train\CTrainGameStateDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\vehicle\CVehicleCreationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\vehicle\CVehicleGadgetDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\vehicle\CVehicleProximityMigrationDataNode.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\trees\CDynamicEntitySyncTreeBase.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\trees\CEntitySyncTreeBase.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\trees\CPhysicalSyncTreeBase.hpp" />
+    <ClInclude Include="GTAV-Classes-master\netsync\trees\CProximityMigrateableSyncTreeBase.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\CCommunications.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\ChatData.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\CJoinRequestContext.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\ClanData.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\CMsgJoinResponse.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\CMsgTextMessage.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\CNetComplaintMgr.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\CNetGamePlayer.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\CNetGamePlayerDataMsg.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\CNetworkPlayerMgr.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\netObject.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\netPlayer.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\netPlayerMgrBase.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\netTime.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\Network.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\RemoteGamerInfoMsg.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\snConnectToPeerTask.hpp" />
+    <ClInclude Include="GTAV-Classes-master\network\snSession.hpp" />
+    <ClInclude Include="GTAV-Classes-master\ped\CPed.hpp" />
+    <ClInclude Include="GTAV-Classes-master\ped\CPedBoneInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\ped\CPedFactory.hpp" />
+    <ClInclude Include="GTAV-Classes-master\ped\CPedIntelligence.hpp" />
+    <ClInclude Include="GTAV-Classes-master\ped\CPedInventory.hpp" />
+    <ClInclude Include="GTAV-Classes-master\ped\CPedModelInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\ped\CPedWeaponManager.hpp" />
+    <ClInclude Include="GTAV-Classes-master\player\CNonPhysicalPlayerData.hpp" />
+    <ClInclude Include="GTAV-Classes-master\player\CPlayerAngles.hpp" />
+    <ClInclude Include="GTAV-Classes-master\player\CPlayerInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\atArray.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\atSingleton.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\joaat.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\rlGamerHandle.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\rlGamerInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\rlGamerInfoBase.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\rlMetric.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\rlQueryPresenceAttributesContext.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\rlScHandle.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\rlSessionByGamerTaskResult.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\rlSessionInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\rlTaskStatus.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\sysMemAllocator.hpp" />
+    <ClInclude Include="GTAV-Classes-master\rage\vector.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\CGameScriptObjInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\dataList.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\globals\GlobalPlayerBD.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\globals\GPBD_FM.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\globals\GPBD_FM_3.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\globals\GPBD_Kicking.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\globals\GPBD_MissionName.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\globals\GSBD.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\globals\GSBD_BlockB.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\globals\GSBD_FM.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\globals\GSBD_Kicking.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\globals\GSBD_PropertyInstances.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\globals\g_AMC_playerBD.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\GtaThread.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\HudColor.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\MPScriptData.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scriptHandler.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scriptHandlerMgr.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scriptHandlerNetComponent.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scriptId.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scriptIdBase.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scriptResource.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scrNativeHandler.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scrNativeRegistration.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scrNativeRegistrationTable.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scrProgram.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scrProgramTable.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scrProgramTableEntry.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scrThread.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\scrThreadContext.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\Timer.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\tlsContext.hpp" />
+    <ClInclude Include="GTAV-Classes-master\script\types.hpp" />
+    <ClInclude Include="GTAV-Classes-master\security\ObfVar.hpp" />
+    <ClInclude Include="GTAV-Classes-master\security\RageSecurity.hpp" />
+    <ClInclude Include="GTAV-Classes-master\socialclub\FriendInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\socialclub\FriendRegistry.hpp" />
+    <ClInclude Include="GTAV-Classes-master\socialclub\ScInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\stats\CPlayerCardStats.hpp" />
+    <ClInclude Include="GTAV-Classes-master\stats\CStatsSerializationContext.hpp" />
+    <ClInclude Include="GTAV-Classes-master\vehicle\CAdvancedData.hpp" />
+    <ClInclude Include="GTAV-Classes-master\vehicle\CBaseSubHandlingData.hpp" />
+    <ClInclude Include="GTAV-Classes-master\vehicle\CCarHandlingData.hpp" />
+    <ClInclude Include="GTAV-Classes-master\vehicle\CHandlingData.hpp" />
+    <ClInclude Include="GTAV-Classes-master\vehicle\CHandlingObject.hpp" />
+    <ClInclude Include="GTAV-Classes-master\vehicle\CVehicle.hpp" />
+    <ClInclude Include="GTAV-Classes-master\vehicle\CVehicleModelInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\weapon\CAmmoInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\weapon\CAmmoProjectileInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\weapon\CAmmoRocketInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\weapon\CAmmoThrownInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\weapon\CHomingRocketParams.hpp" />
+    <ClInclude Include="GTAV-Classes-master\weapon\CItemInfo.hpp" />
+    <ClInclude Include="GTAV-Classes-master\weapon\CWeaponBoneId.hpp" />
+    <ClInclude Include="GTAV-Classes-master\weapon\CWeaponInfo.hpp" />
+    <ClInclude Include="HashList.hpp" />
+    <ClInclude Include="HTTPRequest.hpp" />
+    <ClInclude Include="JSON.hpp" />
+    <ClInclude Include="LabelManager.hpp" />
+    <ClInclude Include="D3DRenderer.hpp" />
+    <ClInclude Include="MainScript.hpp" />
+    <ClInclude Include="Math.hpp" />
+    <ClInclude Include="NativeHooking.hpp" />
+    <ClInclude Include="Notify.hpp" />
+    <ClInclude Include="Pointers.hpp" />
+    <ClInclude Include="GuiScript.hpp" />
+    <ClInclude Include="Hooking.hpp" />
+    <ClInclude Include="Invoker.hpp" />
+    <ClInclude Include="Logger.hpp" />
+    <ClInclude Include="Memory.hpp" />
+    <ClInclude Include="Natives.hpp" />
+    <ClInclude Include="Protections.hpp" />
+    <ClInclude Include="RobinHood.hpp" />
+    <ClInclude Include="RTTI.hpp" />
+    <ClInclude Include="StackWalker\StackWalker.hpp" />
+    <ClInclude Include="STB\STBImage.hpp" />
+    <ClInclude Include="STB\STBImageWrite.hpp" />
+    <ClInclude Include="Teleport.hpp" />
+    <ClInclude Include="ThreadPool.hpp" />
+    <ClInclude Include="UI\abstractOpt.hpp" />
+    <ClInclude Include="UI\abstractSub.hpp" />
+    <ClInclude Include="UI\baseSub.hpp" />
+    <ClInclude Include="UI\boolOpt.hpp" />
+    <ClInclude Include="UI\dxUiManager.hpp" />
+    <ClInclude Include="UI\numOpt.hpp" />
+    <ClInclude Include="UI\regularOpt.hpp" />
+    <ClInclude Include="UI\smoothScroll.hpp" />
+    <ClInclude Include="UI\stringStream.hpp" />
+    <ClInclude Include="UI\subOpt.hpp" />
+    <ClInclude Include="UI\timer.hpp" />
+    <ClInclude Include="UI\vecOpt.hpp" />
+    <ClInclude Include="vecBool.hpp" />
+    <ClInclude Include="VMTHook.hpp" />
+    <MASM Include="soundOverloadDetour.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BytePatch.cpp" />
+    <ClCompile Include="BytePatchMgr.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="Crossmap.cpp" />
+    <ClCompile Include="D3DRenderer.cpp" />
+    <ClCompile Include="Features.cpp" />
+    <ClCompile Include="Fibers\fiber_pool.cpp" />
+    <ClCompile Include="Fibers\script.cpp" />
+    <ClCompile Include="Fibers\script_mgr.cpp" />
+    <ClCompile Include="ImGui\imgui.cpp" />
+    <ClCompile Include="ImGui\imgui_draw.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="ImGui\imgui_tables.cpp" />
+    <ClCompile Include="ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="KicksAndCrashes.cpp" />
+    <ClCompile Include="MainScript.cpp" />
+    <ClCompile Include="NativeHooking.cpp" />
+    <ClCompile Include="Pointers.cpp" />
+    <ClCompile Include="GuiScript.cpp" />
+    <ClCompile Include="Hooking.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="script_function.cpp" />
+    <ClCompile Include="Services\Api\api_service.cpp" />
+    <ClCompile Include="Services\Friend\friends_service.cpp" />
+    <ClCompile Include="Services\Player\player.cpp" />
+    <ClCompile Include="Services\Player\player_service.cpp" />
+    <ClCompile Include="Services\ScriptPatcher\script_patch.cpp" />
+    <ClCompile Include="Services\ScriptPatcher\script_patcher_service.cpp" />
+    <ClCompile Include="SpinnerService.cpp" />
+    <ClCompile Include="StackWalker\StackWalker.cpp" />
+    <ClCompile Include="ThreadPool.cpp" />
+    <ClCompile Include="UI\dxUiManager.cpp" />
+    <ClCompile Include="VMTHook.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D52E5E73-B8A8-4992-8347-41ABE83D4991}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Lightning X</RootNamespace>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+    <ProjectName>LX</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <SpectreMitigation>false</SpectreMitigation>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Binaries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\$(Configuration)-Intermediates\</IntDir>
+    <IncludePath>$(ProjectDir)Lua;$(ProjectDir)Sol2;$(SolutionDir)Libraries\Includes;$(MSBuildProgramFiles32)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <TargetName>LX</TargetName>
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft DirectX SDK (June 2010)\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Binaries\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Binaries\$(Configuration)-Intermediates\</IntDir>
+    <TargetName>LX</TargetName>
+    <IncludePath>$(ProjectDir)Lua;$(ProjectDir)Sol2;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x64;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;BIGBASE_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PrecompiledHeaderFile>Common.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4307</DisableSpecificWarnings>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <CallingConvention>FastCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Binaries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>MinHook/MinHook.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;winhttp.lib;urlmon.lib;wininet.lib;ws2_32.lib;winmm.lib;normaliz.lib;wldap32.lib;crypt32.lib;odbc32.lib;odbccp32.lib;uuid.lib;d3dcompiler.lib;d3d11.lib;d3dx11.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;BIGBASE_RELEASE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <OmitFramePointers>true</OmitFramePointers>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PrecompiledHeaderFile>Common.hpp</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libraries\Includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4307</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <CallingConvention>FastCall</CallingConvention>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalOptions>/Zm2000 %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libraries\Binaries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(SolutionDir)Libraries\Binaries\MinHook\libMinHook.x64.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;winhttp.lib;urlmon.lib;wininet.lib;ws2_32.lib;winmm.lib;normaliz.lib;wldap32.lib;crypt32.lib;odbc32.lib;odbccp32.lib;uuid.lib;d3dcompiler.lib;d3d11.lib;d3dx11.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

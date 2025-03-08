@@ -1,0 +1,1187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Pointers.hpp">
+      <Filter>Hooking\Pattern Managing</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.hpp">
+      <Filter>Hooking\Pattern Managing</Filter>
+    </ClInclude>
+    <ClInclude Include="Natives.hpp">
+      <Filter>Natives</Filter>
+    </ClInclude>
+    <ClInclude Include="Invoker.hpp">
+      <Filter>Natives\Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooking.hpp">
+      <Filter>Hooking\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="VMTHook.hpp">
+      <Filter>DirectX\Direct3D\D3D %28VMT%29</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DRenderer.hpp">
+      <Filter>DirectX\Direct3D\D3D %28Present%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.hpp">
+      <Filter>Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Crossmap.hpp">
+      <Filter>Natives\Crossmapping</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.hpp">
+      <Filter>Core\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="Protections.hpp">
+      <Filter>Hooking</Filter>
+    </ClInclude>
+    <ClInclude Include="LabelManager.hpp">
+      <Filter>Hooking\Label Manger</Filter>
+    </ClInclude>
+    <ClInclude Include="DetourHelper.hpp">
+      <Filter>Hooking\Detour Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Libraries\Includes\MinHook\MinHook.hpp">
+      <Filter>Includes\Detours %28MinHook%29\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="GuiScript.hpp">
+      <Filter>UI Managing\Click UI</Filter>
+    </ClInclude>
+    <ClInclude Include="StackWalker\StackWalker.hpp">
+      <Filter>Includes\Exceptions %28StackWalker%29</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\abstractSub.hpp">
+      <Filter>UI Managing\List UI\Sub Types</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\baseSub.hpp">
+      <Filter>UI Managing\List UI\Sub Types</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\abstractOpt.hpp">
+      <Filter>UI Managing\List UI\Option Types</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\boolOpt.hpp">
+      <Filter>UI Managing\List UI\Option Types</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\numOpt.hpp">
+      <Filter>UI Managing\List UI\Option Types</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\regularOpt.hpp">
+      <Filter>UI Managing\List UI\Option Types</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\subOpt.hpp">
+      <Filter>UI Managing\List UI\Option Types</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\vecOpt.hpp">
+      <Filter>UI Managing\List UI\Option Types</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\smoothScroll.hpp">
+      <Filter>UI Managing\List UI\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\stringStream.hpp">
+      <Filter>UI Managing\List UI\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\timer.hpp">
+      <Filter>UI Managing\List UI\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\dxUiManager.hpp">
+      <Filter>UI Managing\List UI\UI Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScript.hpp">
+      <Filter>UI Managing\List UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Features.hpp">
+      <Filter>Features\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="HTTPRequest.hpp">
+      <Filter>Core\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="JSON.hpp">
+      <Filter>Core\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="STB\STBImage.hpp">
+      <Filter>Includes\Imaging %28STB%29</Filter>
+    </ClInclude>
+    <ClInclude Include="STB\STBImageWrite.hpp">
+      <Filter>Includes\Imaging %28STB%29</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\weapon\CAmmoInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\weapon\CAmmoProjectileInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\weapon\CAmmoRocketInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\weapon\CAmmoThrownInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\weapon\CHomingRocketParams.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\weapon\CItemInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\weapon\CWeaponBoneId.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\weapon\CWeaponInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\atRTTI.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\CBaseModelInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\CNavigation.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\CObject.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\datBase.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\fwArchetype.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\fwArchetypeDef.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\fwExtensibleBase.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\fwExtension.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\fwExtensionContainer.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\fwRefAwareBase.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\fwRefAwareBaseImpl.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\HashTable.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\pgBase.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\phArchetype.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\phBound.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\phBoundCapsule.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\base\phBoundComposite.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\camera\CCameraAngles.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\camera\CCameraManagerAngles.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\camera\CGameCameraAngles.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\draw_handlers\CEntityDrawHandler.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\draw_handlers\CObjectDrawHandler.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\draw_handlers\CPedDrawHandler.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\draw_handlers\CVehicleDrawHandler.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\draw_handlers\fwDrawData.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\entities\CAttackers.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\entities\CDynamicEntity.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\entities\CEntity.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\entities\CPhysical.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\entities\fwEntity.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\enums\eExplosionTag.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\enums\eHandlingType.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\misc\CTunables.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\CProjectBaseSyncDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\CProjectSyncTree.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\netSyncDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\netSyncNodeBase.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\netSyncParentNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\netSyncTree.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\NodeCommonDataOperations.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\automobile\CAutomobileCreationNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\CPedComponents.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\door\CDoorCreationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\door\CDoorMovementDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\door\CDoorScriptGameStateDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\door\CDoorScriptInfoDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\dynamic_entity\CDynamicEntityGameStateDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\entity\CEntityOrientationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\entity\CEntityScriptGameStateDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\entity\CEntityScriptInfoDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\object\CObjectCreationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedAIDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedAppearanceDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedAttachDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedComponentReservationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedCreationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedGameStateDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedHealthDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedInventoryDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedMovementDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedOrientationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedScriptCreationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\ped\CPedTaskSpecificDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\physical\CPhysicalAngVelocityDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\physical\CPhysicalAttachDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\physical\CPhysicalHealthDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\physical\CPhysicalMigrationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\physical\CPhysicalScriptMigrationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\physical\CPhysicalVelocityDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\pickup\CPickupCreationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\pickup_placement\CPickupPlacementCreationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\player\CPlayerAppearanceDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\player\CPlayerCameraDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\player\CPlayerCreationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\player\CPlayerGamerDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\player\CPlayerGameStateDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\player\CPlayerSectorPosNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\proximity_migrateable\CGlobalFlagsDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\proximity_migrateable\CMigrationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\proximity_migrateable\CSectorDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\proximity_migrateable\CSectorPositionDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\task\CClonedGeneralSweepInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\task\ClonedTakeOffPedVariationInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\train\CTrainGameStateDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\vehicle\CVehicleCreationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\vehicle\CVehicleGadgetDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\nodes\vehicle\CVehicleProximityMigrationDataNode.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\trees\CDynamicEntitySyncTreeBase.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\trees\CEntitySyncTreeBase.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\trees\CPhysicalSyncTreeBase.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\netsync\trees\CProximityMigrateableSyncTreeBase.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\CCommunications.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\ChatData.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\CJoinRequestContext.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\ClanData.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\CMsgJoinResponse.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\CMsgTextMessage.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\CNetComplaintMgr.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\CNetGamePlayer.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\CNetGamePlayerDataMsg.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\CNetworkPlayerMgr.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\netObject.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\netPlayer.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\netPlayerMgrBase.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\netTime.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\Network.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\RemoteGamerInfoMsg.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\snConnectToPeerTask.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\network\snSession.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\ped\CPed.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\ped\CPedBoneInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\ped\CPedFactory.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\ped\CPedIntelligence.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\ped\CPedInventory.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\ped\CPedModelInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\ped\CPedWeaponManager.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\player\CNonPhysicalPlayerData.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\player\CPlayerAngles.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\player\CPlayerInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\atArray.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\atSingleton.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\joaat.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\rlGamerHandle.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\rlGamerInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\rlGamerInfoBase.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\rlMetric.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\rlQueryPresenceAttributesContext.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\rlScHandle.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\rlSessionByGamerTaskResult.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\rlSessionInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\rlTaskStatus.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\sysMemAllocator.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\rage\vector.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\CGameScriptObjInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\dataList.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\globals\GlobalPlayerBD.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\globals\GPBD_FM.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\globals\GPBD_FM_3.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\globals\GPBD_Kicking.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\globals\GPBD_MissionName.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\globals\GSBD.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\globals\GSBD_BlockB.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\globals\GSBD_FM.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\globals\GSBD_Kicking.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\globals\GSBD_PropertyInstances.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\globals\g_AMC_playerBD.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\GtaThread.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\HudColor.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\MPScriptData.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scriptHandler.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scriptHandlerMgr.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scriptHandlerNetComponent.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scriptId.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scriptIdBase.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scriptResource.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scrNativeHandler.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scrNativeRegistration.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scrNativeRegistrationTable.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scrProgram.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scrProgramTable.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scrProgramTableEntry.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scrThread.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\scrThreadContext.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\Timer.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\tlsContext.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\script\types.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\security\ObfVar.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\security\RageSecurity.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\socialclub\FriendInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\socialclub\FriendRegistry.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\socialclub\ScInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\stats\CPlayerCardStats.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\stats\CStatsSerializationContext.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\vehicle\CAdvancedData.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\vehicle\CBaseSubHandlingData.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\vehicle\CCarHandlingData.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\vehicle\CHandlingData.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\vehicle\CHandlingObject.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\vehicle\CVehicle.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAV-Classes-master\vehicle\CVehicleModelInfo.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.hpp">
+      <Filter>Hooking\Thread Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="RobinHood.hpp">
+      <Filter>Hooking\RobinHood</Filter>
+    </ClInclude>
+    <ClInclude Include="BytePatch.hpp">
+      <Filter>Hooking\Pattern Managing</Filter>
+    </ClInclude>
+    <ClInclude Include="HashList.hpp">
+      <Filter>Features\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GtaUtill.hpp">
+      <Filter>GTA Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="vecBool.hpp">
+      <Filter>UI Managing\List UI\Option Types</Filter>
+    </ClInclude>
+    <ClInclude Include="NativeHooking.hpp">
+      <Filter>Hooking\NativeHooking</Filter>
+    </ClInclude>
+    <ClInclude Include="AllScripts.hpp">
+      <Filter>Hooking\NativeHooking</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.hpp">
+      <Filter>Features\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Teleport.hpp">
+      <Filter>Features\Teleport</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Features\Teleport</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.hpp">
+      <Filter>Features\Teleport</Filter>
+    </ClInclude>
+    <ClInclude Include="CReplyInterface.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="Notify.hpp">
+      <Filter>DirectX\Direct3D\Notify</Filter>
+    </ClInclude>
+    <ClInclude Include="RTTI.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="exceptionHandler.hpp">
+      <Filter>Includes\Exceptions %28StackWalker%29</Filter>
+    </ClInclude>
+    <ClInclude Include="x64Disassmbler.hpp">
+      <Filter>Includes\Exceptions %28StackWalker%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Translations.hpp">
+      <Filter>Hooking\Translations</Filter>
+    </ClInclude>
+    <ClInclude Include="Vehicle.hpp">
+      <Filter>Features\Teleport</Filter>
+    </ClInclude>
+    <ClInclude Include="WriteGameStateDataNode.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui_Spinner.hpp">
+      <Filter>Features\ImGui Spinner</Filter>
+    </ClInclude>
+    <ClInclude Include="SpinnerService.hpp">
+      <Filter>Features\ImGui Spinner</Filter>
+    </ClInclude>
+    <ClInclude Include="AssignPhysicalIndex.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="fontAwesome.hpp">
+      <Filter>DirectX\Direct3D\Mem</Filter>
+    </ClInclude>
+    <ClInclude Include="fontAwesome6.hpp">
+      <Filter>DirectX\Direct3D\Mem</Filter>
+    </ClInclude>
+    <ClInclude Include="GetModelInfo.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="WritePlayerCameraDataNode.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskJumpAndFallConstructor.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptVirtualMachine.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Fibers\script_mgr.hpp">
+      <Filter>Hooking\Fiber Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Fibers\fiber_pool.hpp">
+      <Filter>Hooking\Fiber Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Fibers\script.hpp">
+      <Filter>Hooking\Fiber Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx11.h">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClInclude>
+    <ClInclude Include="KicksAndCrashes.hpp">
+      <Filter>Features\Core\Toxic</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\Player\player.hpp">
+      <Filter>Services\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\Player\player_service.hpp">
+      <Filter>Services\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\Player\rate_limiter.hpp">
+      <Filter>Services\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="InitNativeTable.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Recovery.hpp">
+      <Filter>Hooking</Filter>
+    </ClInclude>
+    <ClInclude Include="RapidJson.hpp">
+      <Filter>Core\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="BytePatchMgr.hpp">
+      <Filter>Hooking\Pattern Managing</Filter>
+    </ClInclude>
+    <ClInclude Include="script_function.hpp">
+      <Filter>Hooking\ScriptFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\Friend\friends_service.hpp">
+      <Filter>Services\Friends</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\Api\api_service.hpp">
+      <Filter>Services\Api</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkPlayerMgr.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="ReceivedCloneCreate.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="NetObjectMgr.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="ReceivedCloneSync.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="CanApplyData.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="InvalidCrashes.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializeDataNode.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="NetGameEvent.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="WriteVehicleMigrationDataNode.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Labels.hpp">
+      <Filter>Features\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="NoClip.hpp">
+      <Filter>Features\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeCam.hpp">
+      <Filter>Features\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptGlobal.hpp">
+      <Filter>Natives</Filter>
+    </ClInclude>
+    <ClInclude Include="OutfitEditor.hpp">
+      <Filter>Features\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.hpp">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Opt.hpp">
+      <Filter>UI Managing\List UI\Option Types</Filter>
+    </ClInclude>
+    <ClInclude Include="GetNetworkEventData.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="ReceiveNetMessage.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="ReceiveEvent.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptedGameEvent.hpp">
+      <Filter>Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="ImVec2Operations.hpp">
+      <Filter>UI Managing\List UI\UI Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorOpt.hpp">
+      <Filter>UI Managing\List UI\Option Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Colors.hpp">
+      <Filter>UI Managing\List UI\Option Types</Filter>
+    </ClInclude>
+    <ClInclude Include="joaat2.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\ScriptPatcher\script_data.hpp">
+      <Filter>Services\ScriptPatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\ScriptPatcher\script_patch.hpp">
+      <Filter>Services\ScriptPatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="Services\ScriptPatcher\script_patcher_service.hpp">
+      <Filter>Services\ScriptPatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptPatches.hpp">
+      <Filter>Services\ScriptPatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="NetArray.hpp">
+      <Filter>RAGE</Filter>
+    </ClInclude>
+    <ClInclude Include="VehModTable.hpp">
+      <Filter>Features\VehicleModelTable</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Pointers.cpp">
+      <Filter>Hooking\Pattern Managing</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooking.cpp">
+      <Filter>Hooking\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DRenderer.cpp">
+      <Filter>DirectX\Direct3D\D3D %28Present%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Core\DllMain</Filter>
+    </ClCompile>
+    <ClCompile Include="GuiScript.cpp">
+      <Filter>UI Managing\Click UI</Filter>
+    </ClCompile>
+    <ClCompile Include="StackWalker\StackWalker.cpp">
+      <Filter>Includes\Exceptions %28StackWalker%29</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\dxUiManager.cpp">
+      <Filter>UI Managing\List UI\UI Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScript.cpp">
+      <Filter>UI Managing\List UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Features.cpp">
+      <Filter>Features\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool.cpp">
+      <Filter>Hooking\Thread Pool</Filter>
+    </ClCompile>
+    <ClCompile Include="BytePatch.cpp">
+      <Filter>Hooking\Pattern Managing</Filter>
+    </ClCompile>
+    <ClCompile Include="Crossmap.cpp">
+      <Filter>Natives\Crossmapping</Filter>
+    </ClCompile>
+    <ClCompile Include="NativeHooking.cpp">
+      <Filter>Hooking\NativeHooking</Filter>
+    </ClCompile>
+    <ClCompile Include="VMTHook.cpp">
+      <Filter>DirectX\Direct3D\D3D %28VMT%29</Filter>
+    </ClCompile>
+    <ClCompile Include="SpinnerService.cpp">
+      <Filter>Features\ImGui Spinner</Filter>
+    </ClCompile>
+    <ClCompile Include="Fibers\fiber_pool.cpp">
+      <Filter>Hooking\Fiber Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Fibers\script.cpp">
+      <Filter>Hooking\Fiber Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Fibers\script_mgr.cpp">
+      <Filter>Hooking\Fiber Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>Includes\Interface %28ImGui%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\Player\player.cpp">
+      <Filter>Services\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\Player\player_service.cpp">
+      <Filter>Services\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="BytePatchMgr.cpp">
+      <Filter>Hooking\Pattern Managing</Filter>
+    </ClCompile>
+    <ClCompile Include="script_function.cpp">
+      <Filter>Hooking\ScriptFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\Friend\friends_service.cpp">
+      <Filter>Services\Friends</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\Api\api_service.cpp">
+      <Filter>Services\Api</Filter>
+    </ClCompile>
+    <ClCompile Include="KicksAndCrashes.cpp">
+      <Filter>Features\Core\Toxic</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\ScriptPatcher\script_patch.cpp">
+      <Filter>Services\ScriptPatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="Services\ScriptPatcher\script_patcher_service.cpp">
+      <Filter>Services\ScriptPatcher</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Hooking">
+      <UniqueIdentifier>{39169747-e0fc-4c91-a686-7d0edef3f9f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\Pattern Managing">
+      <UniqueIdentifier>{0634e45a-8071-4c06-bc68-b547cf48e30c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\Label Manger">
+      <UniqueIdentifier>{003876d3-4452-48ad-b2bd-aafd4154da5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Natives">
+      <UniqueIdentifier>{754e7ac4-a9d5-4506-88a3-e29627a6f6ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Natives\Invoker">
+      <UniqueIdentifier>{168ffc8b-d632-4f21-8aae-40d10d3c0cda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\Core">
+      <UniqueIdentifier>{fb717c36-1b0c-418b-8a15-8424f409a642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes">
+      <UniqueIdentifier>{3810c3e8-fe84-43cd-af12-d8b47ff190dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Interface %28ImGui%29">
+      <UniqueIdentifier>{f127f7a5-42a4-4782-b566-98d899bfa102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX">
+      <UniqueIdentifier>{25ddccfa-08ca-4b8d-aa0c-664dea8d0dde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\Direct3D">
+      <UniqueIdentifier>{7bb6c3b5-7a23-44a3-b358-f5d24c39355c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\Direct3D\D3D %28Present%29">
+      <UniqueIdentifier>{910a1956-ea12-4edf-9e99-5e971bab12d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\Direct3D\D3D %28VMT%29">
+      <UniqueIdentifier>{062b72f8-c495-4d0b-97cb-917c569b02a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Natives\Crossmapping">
+      <UniqueIdentifier>{4a96c5c1-9e83-4796-927f-b7ed7ed28a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{5e3ba573-b83c-4fcd-b1ed-823d0346a530}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Logger">
+      <UniqueIdentifier>{2c639f34-6da0-46c5-9e46-0e303a880960}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\DllMain">
+      <UniqueIdentifier>{c877f1b5-9a38-4c74-a412-e1a9f0ec7f19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Detours %28MinHook%29">
+      <UniqueIdentifier>{420ad90e-9221-4007-b75e-a00cb8b895d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Detours %28MinHook%29\Main">
+      <UniqueIdentifier>{33d527b6-8c3e-4218-81ba-02b7a5a2f3f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\Detour Helper">
+      <UniqueIdentifier>{1df29803-8033-4606-94fe-8a839f924330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\Fiber Mgr">
+      <UniqueIdentifier>{d377b0ac-dbc5-41a7-af69-dc95df41b39c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Exceptions %28StackWalker%29">
+      <UniqueIdentifier>{a43216ec-9d58-402e-915d-0b5d46629cdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Managing">
+      <UniqueIdentifier>{25f6df36-b89f-4cb7-94ae-115317502657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Managing\List UI">
+      <UniqueIdentifier>{61920fe5-2741-4a1a-b66e-2c97bcacce72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Managing\Click UI">
+      <UniqueIdentifier>{40f35e59-da6e-4d26-8a4e-0a55e854ac1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Managing\List UI\Option Types">
+      <UniqueIdentifier>{13b84303-4c2f-4712-86ee-e68dfbabea3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Managing\List UI\Sub Types">
+      <UniqueIdentifier>{3273a436-efce-477f-9cd5-037ab7db2b38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Managing\List UI\Helpers">
+      <UniqueIdentifier>{37f606a8-cb6d-4bae-9cfa-93fda2596f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Managing\List UI\UI Manager">
+      <UniqueIdentifier>{714cb095-cf48-4240-9d77-63955ea856b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\Direct3D\Mem">
+      <UniqueIdentifier>{e9c01d80-f1ac-4063-b018-7c5444d0ebdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features">
+      <UniqueIdentifier>{6856c9df-f92f-4395-94ae-9a729b67aa2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Core">
+      <UniqueIdentifier>{cbac1ee4-2f5b-4315-a6c3-3a63450177d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Network">
+      <UniqueIdentifier>{bc7d96e7-e715-4541-827f-71b0be95049e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Includes\Imaging %28STB%29">
+      <UniqueIdentifier>{0de1901f-689f-4e40-b578-7647d6a29210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RAGE">
+      <UniqueIdentifier>{915b982f-9153-46c8-adb3-ccd60777beb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\Thread Pool">
+      <UniqueIdentifier>{1c4abc24-bef8-4159-8279-474a03c32194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\RobinHood">
+      <UniqueIdentifier>{c2a3e11d-9672-4532-a082-446db419e447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GTA Utill">
+      <UniqueIdentifier>{f4d004e5-7aa9-4d69-be85-6c1c6086b310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\NativeHooking">
+      <UniqueIdentifier>{1419bff6-7a4c-4841-868e-578bdcee78e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Enums">
+      <UniqueIdentifier>{7bc0865a-999a-496a-a121-8e7c9d0f703f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Teleport">
+      <UniqueIdentifier>{2debe125-d49d-49d2-ab75-d32588abd14e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\Direct3D\Notify">
+      <UniqueIdentifier>{210b86a9-b636-4c4a-8293-7219f46914e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\Translations">
+      <UniqueIdentifier>{54d79343-39aa-4c6a-912f-f7fbc900aebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\Hooks">
+      <UniqueIdentifier>{fe9cfa2c-7e52-47a8-af94-7fa51c6c1ef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\ImGui Spinner">
+      <UniqueIdentifier>{56e5b2a8-1b6c-4eee-ad17-64d7ff3feabf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\Core\Toxic">
+      <UniqueIdentifier>{b146f64e-fd15-4e3c-babd-c466fa6b5c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Services">
+      <UniqueIdentifier>{d05010a7-46b8-4e3d-b148-267dea2c6bc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Services\Player">
+      <UniqueIdentifier>{a7a7602c-7b4e-4cfd-8416-0476e1f2abcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Services\ScriptPatcher">
+      <UniqueIdentifier>{e23ee6f0-ab5e-475a-a6bf-f891ce64bba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooking\ScriptFunction">
+      <UniqueIdentifier>{49fab36d-9950-48ab-b79a-b93797b4f791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Services\Friends">
+      <UniqueIdentifier>{1bfe0529-4777-480f-b437-9920395bdd07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Services\Api">
+      <UniqueIdentifier>{c8b718bc-f677-45a9-8d92-8153fead3a7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{ab47c21f-ccca-4dc7-b9c4-62a831a9101a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Features\VehicleModelTable">
+      <UniqueIdentifier>{72f75762-256a-4ecc-89ef-d035652edbb3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="soundOverloadDetour.asm">
+      <Filter>Hooking\Pattern Managing</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
